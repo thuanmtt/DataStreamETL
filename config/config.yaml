@@ -2,6 +2,7 @@ kafka:
   bootstrap_servers: "localhost:29092"
   topic: "your_topic_name"
   group_id: "your_group_id"
+  producer_timeout: 5  # Thời gian timeout (giây) cho Producer
 
 postgres:
   host: "localhost"

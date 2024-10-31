@@ -9,6 +9,8 @@ if __name__ == "__main__":
     consumer = init_kafka_consumer(config)
     session = init_db(config["postgres"])
 
+    print("Starting ...")
     for raw_data in consume_data(consumer):
+        print("Message received: ", raw_data)
         cleaned_data = clean_data(raw_data)
         write_to_db(session, cleaned_data)
