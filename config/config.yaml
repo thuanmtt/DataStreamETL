@@ -1,0 +1,11 @@
+kafka:
+  bootstrap_servers: "localhost:29092"
+  topic: "your_topic_name"
+  group_id: "your_group_id"
+
+postgres:
+  host: "localhost"
+  port: 5432
+  user: "postgres"
+  password: "changeme"
+  database: "postgres"
